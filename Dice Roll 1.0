@@ -1,0 +1,22 @@
+import random
+
+def roll_dice():
+    # Simulate rolling two dice
+    return random.randint(1, 6), random.randint(1, 6)
+
+# First roll
+print("Rolling The Dices…")
+first_roll = roll_dice()
+print("The Values are :")
+print(first_roll[0])
+print(first_roll[1])
+
+# Check if the user wants to roll again
+roll_again = "yes"
+
+if roll_again.lower() == "yes":
+    print("Rolling The Dices Again…")
+    second_roll = roll_dice()
+    print("The Values are :")
+    print(second_roll[0])
+    print(second_roll[1])
